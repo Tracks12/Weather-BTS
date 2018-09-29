@@ -6,8 +6,8 @@
 -->
 <?php
 	session_start();
-	if(!isset($_SESSION['user']) && !isset($_GET['index'])) { header('location: ./?index=login'); }
 	if(isset($_GET['logout'])) { session_destroy(); header('location: ./'); }
+	if(!isset($_GET['index']) && !isset($_SESSION['user'])) { header('location: ./?index=login'); }
 ?>
 <html>
 	<head>
@@ -37,6 +37,7 @@
 			<aside>
 				<?php
 					if(isset($_GET['index'])) {
+						if($_GET['index'] !== 'login' && !isset($_SESSION['user'])) { header('location: ./?index=login'); }
 						switch($_GET['index']) {
 							case 'home':
 							default: echo('Accueil'); break;
