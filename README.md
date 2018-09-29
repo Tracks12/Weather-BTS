@@ -8,7 +8,11 @@ Plan du site :
 |   <a href="../../blob/master/README.md">README.md</a>
 |   <a href="../../blob/master/design.png">design.png</a>
 |   <a href="../../blob/master/index.php">index.php</a>
-|   <a href="../../blob/master/login.html">login.html</a>
+|
++---<a href="../../tree/master/assets/">assets/</a>
+|   +---<a href="../../blob/master/assets/footer.html">footer.html</a>
+|   +---<a href="../../blob/master/assets/header.php">header.php</a>
+|   \---<a href="../../blob/master/assets/login.html">login.html</a>
 |
 +---<a href="../../tree/master/css/">css/</a>
 |   \---<a href="../../blob/master/css/style.css">style.css</a>
