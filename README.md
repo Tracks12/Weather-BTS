@@ -21,3 +21,6 @@ Plan du site :
     +---<a href="../../blob/master/pics/logo.png">logo.png</a>
     \---<a href="../../blob/master/pics/icon.ico">icon.ico</a>
 </pre>
+
+Aperçu du site :
+<img type="image/png" src="../../blob/master/pics/background.png" />
