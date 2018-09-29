@@ -1,4 +1,5 @@
 <header>
-	<h1>Weather BTS SN-EC</h1>
+	<?php if(!isset($thead)) { $thead = array('', ''); } ?>
+	<h1>Météo BTS SN-EC<?php echo($thead[1]); ?></h1>
 </header>
 <!-- END -->
