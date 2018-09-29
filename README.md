@@ -22,5 +22,6 @@ Plan du site :
     \---<a href="../../blob/master/pics/icon.ico">icon.ico</a>
 </pre>
 
-Aperçu du site :<br />
+Aperçu du site :
+
 <img type="image/png" src="../../blob/master/screens/screenshot0.png" />
