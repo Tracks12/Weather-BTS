@@ -17,7 +17,7 @@
 	</head>
 	<body onload="mainMenu();">
 		<nav>
-			<img type="image/png" src="./pics/logo.png" onclick="document.location = './';" />
+			<img type="image/png" src="./pics/logo.png" alt="accueil" title="Retour à l'accueil" onclick="document.location = './';" />
 			<ul>
 				<?php
 					if(isset($_SESSION['user'])) {
