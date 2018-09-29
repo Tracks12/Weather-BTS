@@ -23,4 +23,4 @@ Plan du site :
 </pre>
 
 Aperçu du site :
-<img type="image/png" src="../../blob/master/pics/background.png" />
+<img type="image/png" src="../../blob/master/design.png" />
