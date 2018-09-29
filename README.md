@@ -12,8 +12,10 @@ Plan du site :
 |
 +---<a href="../../tree/master/css/">css/</a>
 |   \---<a href="../../blob/master/css/style.css">style.css</a>
+|
 +---<a href="../../tree/master/js/">js/</a>
 |   \---<a href="../../blob/master/js/script.js">script.js</a>
+|
 \---<a href="../../tree/master/pics/">pics/</a>
     +---<a href="../../blob/master/pics/background.png">background.png</a>
     +---<a href="../../blob/master/pics/logo.png">logo.png</a>
