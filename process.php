@@ -13,7 +13,7 @@
 		if(($_POST['user'] === 'admin') && ($_POST['pass'] === 'admin')) {
 			$_SESSION['user'] = $_POST['user'];
 			header('location: ./');
-		}
+		} else { header('location: ./?index=login&error'); }
 	}
 	
 	// END
