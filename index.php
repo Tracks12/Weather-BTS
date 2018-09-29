@@ -4,11 +4,20 @@
   Update at : 28/09/2018
   Update by : CARDINAL FLorian
 -->
-<?php session_start(); ?>
+<?php
+	session_start();
+	
+	$thead = array('', '');
+	if(isset($_GET['index'])) {
+		switch($_GET['index']) {
+			case 'login': $thead = array('login', 'Connexion'); break;
+		}
+	}
+?>
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Weather BTS</title>
+		<title>Météo BTS<?php echo(" - ".$thead[0]); ?></title>
 		<link rel="icon" type="image/ico" href="./pics/icon.ico" />
 		<link rel="stylesheet" type="text/css" href="./css/style.css" />
 		<script language="javascript" type="text/javascript" src="./js/script.js"></script>
