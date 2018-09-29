@@ -53,7 +53,7 @@ nav ul {
 nav ul li { border-top: 3px solid rgb(0, 58, 59); }
 
 nav ul li a, nav ul li a:visited {
-	color: #00BBBB;
+	color: #22BBBB;
 	display: inline-block;
 	font-size: 20px;
 	letter-spacing: 1px;
@@ -62,21 +62,20 @@ nav ul li a, nav ul li a:visited {
 	transition: all .15s;
 	width: 94.2%;
 }
-
 nav ul li a:hover {
 	background: rgba(255, 255, 255, .1);
-	color: #00DDDD;
+	color: #22DDDD;
 	padding-left: 25px;
-	text-shadow: 1px 1px 2px #00DDDD;
+	text-shadow: 1px 1px 2px #22DDDD;
 	width: 82.6%;
 }
 
 header {
-	background: rgba(0, 0, 0, .7);
+	background: rgba(0, 0, 40, .7);
 	border: 3px solid #CCCCCC;
-	border-image: linear-gradient(-90deg, #00CCCC, #CC00CC) 1;
+	border-image: linear-gradient(-90deg, #22CCCC, #CC22CC) 1;
 	border-top: 0;
-	box-shadow: 0 3px 10px #00CCCC;
+	box-shadow: 0 3px 10px #22CCCC;
 	left: 12.5em;
 	padding: 20px;
 	position: absolute;
@@ -88,7 +87,7 @@ header h1 {
 	font-size: 40px;
 	font-weight: 100;
 	letter-spacing: 2px;
-	text-shadow: 1px 1px 10px #00FFFF;
+	text-shadow: 1px 1px 10px #22FFFF;
 }
 
 section {
@@ -104,7 +103,7 @@ section {
 
 section aside {
 	background: rgba(0, 0, 0, .5);
-	border-radius: 0 0 10px 10px;
+	border-radius: 10px;
 	height: auto;
 	min-height: 500px;
 	margin: 5px 20px 40px 20px;
@@ -112,20 +111,66 @@ section aside {
 }
 
 section aside .login {
-	
+	background: rgba(0, 0, 0, .5);
+	border: 2px solid #22FFFF;
+	border-radius: 0 10px 0 10px;
+	box-shadow: 1px 1px 2px #333333;
+	margin: auto;
+	padding: 4px;
+	text-align: center;
+	width: 35em;
+}
+
+section aside .login h3 {
+	border-bottom: 2px solid #22FFFF;
+	font-weight: 100;
+	padding-left: 5px;
+	text-align: left;
+	text-shadow: 1px 1px 2px #22FFFF;
+}
+
+section aside .login table { margin: 40px auto 0 auto; }
+
+input {
+	background: transparent;
+	border: 2px solid #22FFFF;
+	border-radius: 50px;
+	color: #22FFFF;
+	font-size: 16px;
+	margin: 10px auto;
+	padding: 5px 10px;
+}
+input:placeholder-shown { border-color: #CC2222; }
+input::placeholder { color: #229999; }
+
+input[type=submit] {
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 15px auto 20px auto;
+	padding: 10px 25px;
+	transition: all .2s;
+}
+input[type=submit]:hover {
+	background: #22FFFF;
+	box-shadow: 0px 0px 30px #00FFFF;
+	color: #222222;
+	margin: 13px auto 18px auto;
+	padding: 12px 30px;
 }
 
 footer {
-	background: rgba(0, 0, 0, .7);
-	border-top: 2px solid #CC00CC;
+	background: rgba(0, 0, 20, .7);
+	border-top: 2px solid #CC22CC;
 	bottom: 0;
-	box-shadow: 0px -2px 5px #CC00CC;
-	color: #CC00CC;
+	box-shadow: 0px -2px 5px #CC22CC;
+	color: #CC22CC;
 	left: 12.5em;
 	padding: 3px 10px;
 	position: absolute;
 	right: .5em;
-	text-shadow: 1px 1px 1px #AA00AA;
+	text-shadow: 1px 1px 1px #AA22AA;
 	z-index: 1;
 }
 
