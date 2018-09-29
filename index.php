@@ -7,7 +7,6 @@
 <?php
 	session_start();
 	if(isset($_GET['logout'])) { session_destroy(); header('location: ./'); }
-	if(!isset($_GET['index']) && !isset($_SESSION['user'])) { header('location: ./?index=login'); }
 ?>
 <html>
 	<head>
