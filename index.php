@@ -6,13 +6,6 @@
 -->
 <?php
 	session_start();
-	
-	$thead = array('', '');
-	if(isset($_GET['index'])) {
-		switch($_GET['index']) {
-			case 'login': $thead = array('login', 'Connexion'); break;
-		}
-	}
 ?>
 <html>
 	<head>
