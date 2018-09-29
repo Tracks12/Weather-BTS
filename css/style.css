@@ -1,0 +1,142 @@
+/*******************************
+*                              *
+* File      : style.css        *
+* Update at : 28/09/2018       *
+* Update by : CARDINAL Florian *
+*                              *
+*******************************/
+
+* {
+	font-family: Ubuntu, Lato, sans-serif;
+	margin: 0; padding: 0;
+}
+
+html {
+	background-attachment: fixed;
+	background-color: rgba(0, 0, 40, .7);
+	background-image: url('../pics/background.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: rgb(0, 255, 255);
+	height: 100%; width: 100%;
+}
+
+body {
+	background: rgba(0, 0, 40, .5);
+	height: 100%; width: 100%;
+}
+
+nav {
+	background: rgb(0, 0, 40);
+	height: 100%;
+	position: absolute;
+	text-align: center;
+	width: 12em;
+}
+
+nav img {
+	border-radius: 100%;
+	cursor: pointer;
+	margin: 5px;
+	transition: all .15s;
+	width: 10em;
+}
+nav img:hover { background: rgba(255, 255, 255, .1); }
+
+nav ul {
+	list-style-type: none;
+	padding: 0 10px;
+	text-align: left;
+}
+
+nav ul li { border-top: 3px solid rgb(0, 58, 59); }
+
+nav ul li a, nav ul li a:visited {
+	color: #00BBBB;
+	display: inline-block;
+	font-size: 20px;
+	letter-spacing: 1px;
+	padding: 10px 5px;
+	text-decoration: none;
+	transition: all .15s;
+	width: 94.2%;
+}
+
+nav ul li a:hover {
+	background: rgba(255, 255, 255, .1);
+	color: #00DDDD;
+	padding-left: 25px;
+	text-shadow: 1px 1px 2px #00DDDD;
+	width: 82.6%;
+}
+
+header {
+	background: rgba(0, 0, 0, .7);
+	border: 3px solid #CCCCCC;
+	border-image: linear-gradient(-90deg, #00CCCC, #CC00CC) 1;
+	border-top: 0;
+	box-shadow: 0 3px 10px #00CCCC;
+	left: 12.5em;
+	padding: 20px;
+	position: absolute;
+	right: .5em;
+	z-index: 1;
+}
+
+header h1 {
+	font-size: 40px;
+	font-weight: 100;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 10px #00FFFF;
+}
+
+section {
+	bottom: 0;
+	left: 12em;
+	overflow: auto;
+	position: absolute;
+	padding-top: 100px;
+	right: 0;
+	top: 0;
+	z-index: 0;
+}
+
+section aside {
+	background: rgba(0, 0, 0, .5);
+	border-radius: 0 0 10px 10px;
+	height: auto;
+	min-height: 500px;
+	margin: 5px 20px 40px 20px;
+	padding: 50px;
+}
+
+section aside .login {
+	
+}
+
+footer {
+	background: rgba(0, 0, 0, .7);
+	border-top: 2px solid #CC00CC;
+	bottom: 0;
+	box-shadow: 0px -2px 5px #CC00CC;
+	color: #CC00CC;
+	left: 12.5em;
+	padding: 3px 10px;
+	position: absolute;
+	right: .5em;
+	text-shadow: 1px 1px 1px #AA00AA;
+	z-index: 1;
+}
+
+footer marquee {
+	left: 5em;
+	position: absolute;
+	right: 10px;
+	top: 3px;
+	width: auto;
+}
+
+/******
+* END *
+******/
