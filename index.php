@@ -43,7 +43,11 @@
 							case 'live': break;
 							case 'story': break;
 							case 'contact': require('./assets/contact.html'); break;
-							case 'login': require('./assets/login.html'); break;
+							case 'login': require('./assets/login.html');
+								if(isset($_GET['error'])) { echo('<fieldset class="infoBox">
+										<p class="error">Identifiants Incorrect</p>
+									</fieldset');
+								} break;
 						}
 					} else { header('location: ./?index=home'); }
 				?>

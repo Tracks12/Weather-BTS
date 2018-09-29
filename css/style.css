@@ -110,14 +110,29 @@ section aside {
 	padding: 50px;
 }
 
-section aside .login {
+section aside fieldset {
 	background: rgba(0, 0, 0, .5);
 	border: 2px solid #22FFFF;
 	border-radius: 0 10px 0 10px;
 	box-shadow: 1px 1px 2px #333333;
-	margin: auto;
-	padding: 4px;
 	text-align: center;
+}
+
+section aside .infoBox {
+	margin: 20px auto;
+	width: 30em;
+}
+
+section aside .infoBox p {
+	font-family: consolas, monospace;
+	font-size: 20px;
+	margin: 30px;
+}
+.error { color: #CC2222; }
+
+section aside .login {
+	margin: 0 auto 0 auto;
+	padding: 4px;
 	width: 35em;
 }
 
