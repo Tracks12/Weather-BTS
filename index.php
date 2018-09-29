@@ -6,6 +6,8 @@
 -->
 <?php
 	session_start();
+	if(!isset($_SESSION['user']) && !isset($_GET['index'])) { header('location: ./?index=login'); }
+	if(isset($_GET['logout'])) { session_destroy(); header('location: ./'); }
 ?>
 <html>
 	<head>
@@ -30,14 +32,20 @@
 				?>
 			</ul>
 		</nav>
-		<?php require('./assets/header.php'); ?>
+		<?php require('./assets/header.html'); ?>
 		<section>
 			<aside>
 				<?php
-					switch($_GET['index']) {
-						case 'login': require('./assets/login.html'); break;
-						default: header('location: ./?index=login'); break;
-					}
+					if(isset($_GET['index'])) {
+						switch($_GET['index']) {
+							case 'home':
+							default: echo('Accueil'); break;
+							case 'live': break;
+							case 'story': break;
+							case 'contact': require('./assets/contact.html'); break;
+							case 'login': require('./assets/login.html'); break;
+						}
+					} else { header('location: ./?index=home'); }
 				?>
 			</aside>
 		</section>
