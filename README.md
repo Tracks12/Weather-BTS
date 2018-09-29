@@ -11,7 +11,7 @@ Plan du site :
 |
 +---<a href="../../tree/master/assets/">assets/</a>
 |   +---<a href="../../blob/master/assets/footer.html">footer.html</a>
-|   +---<a href="../../blob/master/assets/header.php">header.php</a>
+|   +---<a href="../../blob/master/assets/header.html">header.php</a>
 |   \---<a href="../../blob/master/assets/login.html">login.html</a>
 |
 +---<a href="../../tree/master/css/">css/</a>
