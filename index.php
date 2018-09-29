@@ -28,25 +28,18 @@
 				?>
 			</ul>
 		</nav>
-		<header>
-			<h1>Weather BTS SN-EC</h1>
-		</header>
+		<?php require('./assets/header.php'); ?>
 		<section>
 			<aside>
 				<?php
 					switch($_GET['index']) {
-						case 'login': require('login.html'); break;
-						default: if(!isset($_SESSION['user'])) {
-								header('location: ./?index=login');
-							} break;
+						case 'login': require('./assets/login.html'); break;
+						default: header('location: ./?index=login'); break;
 					}
 				?>
 			</aside>
 		</section>
-		<footer>
-			<p>Fait par :</p>
-			<marquee>Andrieu Laurent, Ardanouy Baptiste, Cardinal Florian</marquee>
-		</footer>
+		<?php require('./assets/footer.html'); ?>
 	</body>
 </html>
 <!-- END -->
