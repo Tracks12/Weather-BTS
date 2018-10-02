@@ -12,12 +12,7 @@
 }
 
 html {
-	background-attachment: fixed;
-	background-color: rgba(0, 0, 40, .7);
-	background-image: url('../pics/background.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	background: rgba(0, 0, 0, .7);
 	color: rgb(0, 255, 255);
 	height: 100%; width: 100%;
 }
@@ -25,6 +20,19 @@ html {
 body {
 	background: rgba(0, 0, 40, .5);
 	height: 100%; width: 100%;
+}
+
+.bg {
+	background-attachment: fixed;
+	background-image: url('../pics/background.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: blur(2px);
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
 }
 
 nav {
@@ -95,7 +103,6 @@ section {
 	left: 12em;
 	overflow: auto;
 	position: absolute;
-	padding-top: 100px;
 	right: 0;
 	top: 0;
 	z-index: 0;
@@ -103,11 +110,13 @@ section {
 
 section aside {
 	background: rgba(0, 0, 0, .5);
-	border-radius: 10px;
+	border-radius: 0 0 10px 10px;
 	height: auto;
-	min-height: 500px;
-	margin: 5px 20px 40px 20px;
+	min-height: 60%;
+	margin: 0 20px 40px 20px;
+	overflow: auto;
 	padding: 50px;
+	padding-top: 150px;
 }
 
 section aside fieldset {
@@ -141,7 +150,7 @@ section aside .login h3 {
 	font-weight: 100;
 	padding-left: 5px;
 	text-align: left;
-	text-shadow: 1px 1px 2px #22FFFF;
+	text-shadow: 1px 1px 4px #22FFFF;
 }
 
 section aside .login table { margin: 40px auto 0 auto; }

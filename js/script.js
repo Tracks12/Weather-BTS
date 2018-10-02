@@ -7,7 +7,7 @@
 *******************************/
 
 var menu = Array('home', 'live', 'story', 'contact', 'login'),
-		title = Array('Accueil', 'Temps Réel', 'Historique', 'Contact', 'Connexion');
+    title = Array('Accueil', 'Temps Réel', 'Historique', 'Contact', 'Connexion');
 
 function mainMenu() {
 	var x, y, cell = document.getElementsByClassName('menu'),
@@ -30,6 +30,8 @@ function mainMenu() {
 	
 	document.title += " - "+title[y];
 	document.getElementsByTagName('h1')[0].innerHTML += " - "+title[y];
+	
+	if(y == 4) { document.getElementById('user').focus(); }
 }
 
 /******

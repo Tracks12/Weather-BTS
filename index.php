@@ -14,24 +14,15 @@
 		<title>Météo BTS</title>
 		<link rel="icon" type="image/ico" href="./pics/icon.ico" />
 		<link rel="stylesheet" type="text/css" href="./css/style.css" />
+		<link rel="stylesheet" type="text/css" href="./css/scroll.css" />
 		<script language="javascript" type="text/javascript" src="./js/script.js"></script>
 	</head>
 	<body onload="mainMenu();">
-		<nav>
-			<img type="image/png" src="./pics/logo.png" alt="accueil" title="Retour à l'accueil" onclick="document.location = './';" />
-			<ul>
-				<?php
-					if(isset($_SESSION['user'])) {
-						echo('<li><a class="menu" href="?index=home">Accueil</a></li>
-							<li><a class="menu" href="?index=live">Live</a></li>
-							<li><a class="menu" href="?index=story">Historique</a></li>
-							<li><a class="menu" href="?index=contact">Contact</a></li>
-							<li><a class="menu" href="?logout">Déconnexion</a></li>');
-					} else { echo('<li><a class="menu" href="?index=login">Connexion</a></li>'); }
-				?>
-			</ul>
-		</nav>
-		<?php require('./assets/header.html'); ?>
+		<div class="bg"></div>
+		<?php
+			require('./assets/nav.php');
+			require('./assets/header.html');
+		?>
 		<section>
 			<aside>
 				<?php
@@ -39,14 +30,15 @@
 						if($_GET['index'] !== 'login' && !isset($_SESSION['user'])) { header('location: ./?index=login'); }
 						switch($_GET['index']) {
 							case 'home':
-							default: echo('Accueil'); break;
-							case 'live': break;
-							case 'story': break;
+							default: for($i = 0; $i < 30; $i++) { echo('<p>Accueil</p>'); } break;
+							case 'live': require('./assets/live.php'); break;
+							case 'story': require('./assets/story.php'); break;
 							case 'contact': require('./assets/contact.html'); break;
 							case 'login': require('./assets/login.html');
-								if(isset($_GET['error'])) { echo('<fieldset class="infoBox">
-										<p class="error">Identifiants Incorrect</p>
-									</fieldset');
+								if(isset($_GET['error'])) {
+									echo('<fieldset class="infoBox">
+											<p class="error">Identifiants Incorrect</p>
+										</fieldset>');
 								} break;
 						}
 					} else { header('location: ./?index=home'); }
