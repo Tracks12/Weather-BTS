@@ -15,6 +15,7 @@
 		<link rel="icon" type="image/ico" href="./pics/icon.ico" />
 		<link rel="stylesheet" type="text/css" href="./css/style.css" />
 		<link rel="stylesheet" type="text/css" href="./css/scroll.css" />
+		<link rel="stylesheet" type="text/css" href="./css/color-default.css" />
 		<script language="javascript" type="text/javascript" src="./js/script.js"></script>
 	</head>
 	<body onload="mainMenu();">
@@ -31,7 +32,7 @@
 						switch($_GET['index']) {
 							case 'home':
 							default: echo('<h2>Bienvenu</h2>');
-								for($i = 0; $i < 20; $i++) { echo('<p>blabla</p>'); } break;
+								for($i = 0; $i < 30; $i++) { echo('<p>blabla</p>'); } break;
 							case 'live': require('./assets/live.php'); break;
 							case 'story': require('./assets/story.php'); break;
 							case 'contact': require('./assets/contact.html'); break;

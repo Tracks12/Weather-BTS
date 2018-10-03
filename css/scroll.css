@@ -1,6 +1,6 @@
 /*******************************
 *                              *
-* File : scroll.css            *
+* File      : scroll.css       *
 * Update at : 02/10/2018       *
 * Update by : CARDINAL Florian *
 *                              *
@@ -12,8 +12,7 @@
 ::-webkit-scrollbar:vertical { height: 100%; width: 8px; }
 ::-webkit-scrollbar:horizontal { height: 8px; width: 100%; }
 ::-webkit-scrollbar-track-piece { margin: 5%; }
-::-webkit-scrollbar-thumb { background: rgba(0, 0, 40, .5); border-radius: 50px; }
-::-webkit-scrollbar-thumb:hover { background: rgba(0, 0, 40, .7); }
+::-webkit-scrollbar-thumb { border-radius: 50px; }
 ::-webkit-scrollbar-button { height: 0; }
 
 /******

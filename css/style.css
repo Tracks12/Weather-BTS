@@ -11,20 +11,11 @@
 	margin: 0; padding: 0;
 }
 
-html {
-	background: rgba(0, 0, 0, .7);
-	color: rgb(0, 255, 255);
-	height: 100%; width: 100%;
-}
-
-body {
-	background: rgba(0, 0, 40, .5);
-	height: 100%; width: 100%;
-}
+html { height: 100%; width: 100%; }
+body { height: 100%; width: 100%; }
 
 .bg {
 	background-attachment: fixed;
-	background-image: url('../pics/background.png');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -36,7 +27,6 @@ body {
 }
 
 nav {
-	background: rgb(0, 0, 40);
 	height: 100%;
 	position: absolute;
 	text-align: center;
@@ -44,7 +34,6 @@ nav {
 }
 
 nav div {
-	background: url('../pics/logo.png');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -55,7 +44,6 @@ nav div {
 	transition: all .15s;
 	width: 10em;
 }
-nav div:hover { background-color: rgba(255, 255, 255, .1); }
 
 nav ul {
 	list-style-type: none;
@@ -63,10 +51,9 @@ nav ul {
 	text-align: left;
 }
 
-nav ul li { border-top: 3px solid rgb(0, 58, 59); }
+nav ul li { border-top: 3px solid; }
 
 nav ul li a, nav ul li a:visited {
-	color: #22BBBB;
 	display: inline-block;
 	font-size: 20px;
 	letter-spacing: 1px;
@@ -76,19 +63,13 @@ nav ul li a, nav ul li a:visited {
 	width: 94.2%;
 }
 nav ul li a:hover {
-	background: rgba(255, 255, 255, .1);
-	color: #22DDDD;
 	padding-left: 25px;
-	text-shadow: 1px 1px 2px #22DDDD;
 	width: 82.6%;
 }
 
 header {
-	background: rgba(0, 0, 40, .7);
-	border: 3px solid #CCCCCC;
-	border-image: linear-gradient(-90deg, #22CCCC, #CC22CC) 1;
+	border: 3px solid;
 	border-top: 0;
-	box-shadow: 0 3px 10px #22CCCC;
 	left: 12.5em;
 	padding: 20px;
 	position: absolute;
@@ -100,7 +81,6 @@ header h1 {
 	font-size: 40px;
 	font-weight: 100;
 	letter-spacing: 2px;
-	text-shadow: 1px 1px 10px #22FFFF;
 }
 
 section {
@@ -114,7 +94,6 @@ section {
 }
 
 section aside {
-	background: rgba(0, 0, 0, .5);
 	border-radius: 0 0 10px 10px;
 	height: auto;
 	min-height: 60%;
@@ -125,21 +104,18 @@ section aside {
 }
 
 section aside fieldset {
-	background: rgba(0, 0, 0, .5);
-	border: 2px solid #22FFFF;
+	border: 2px solid;
 	border-radius: 0 10px 0 10px;
-	box-shadow: 1px 1px 2px #333333;
 	margin: 0 auto;
 	padding: 4px;
 	text-align: center;
 }
 
 section aside fieldset h3 {
-	border-bottom: 2px solid #22FFFF;
+	border-bottom: 2px solid;
 	font-weight: 100;
 	padding-left: 5px;
 	text-align: left;
-	text-shadow: 1px 1px 4px #22FFFF;
 }
 
 section aside fieldset table { margin: 40px auto 0 auto; }
@@ -154,7 +130,6 @@ section aside .infoBox p {
 	font-size: 20px;
 	margin: 30px;
 }
-.error { color: #CC2222; }
 
 section aside .login { width: 35em; }
 section aside .contact { width: 40em; }
@@ -163,16 +138,13 @@ section aside .contact td { padding: 0 20px; }
 
 textarea, input {
 	background: transparent;
-	border: 2px solid #22FFFF;
+	border: 2px solid;
 	border-radius: 50px;
-	color: #22FFFF;
 	font-size: 16px;
 	margin: 10px auto;
 	padding: 5px 10px;
 	transition: all .2s;
 }
-textarea:placeholder-shown, input:placeholder-shown { border-color: #CC2222; }
-textarea::placeholder, input::placeholder { color: #229999; }
 
 input[type=submit] {
 	border-radius: 8px;
@@ -184,9 +156,6 @@ input[type=submit] {
 	text-transform: uppercase;
 }
 input[type=submit]:hover {
-	background: #22FFFF;
-	box-shadow: 0px 0px 30px #00FFFF;
-	color: #222222;
 	margin: 13px auto 18px auto;
 	padding: 12px 30px;
 }
@@ -199,16 +168,12 @@ textarea {
 }
 
 footer {
-	background: rgba(0, 0, 20, .7);
-	border-top: 2px solid #CC22CC;
+	border-top: 2px solid;
 	bottom: 0;
-	box-shadow: 0px -2px 5px #CC22CC;
-	color: #CC22CC;
 	left: 12.5em;
 	padding: 3px 10px;
 	position: absolute;
 	right: .5em;
-	text-shadow: 1px 1px 1px #AA22AA;
 	z-index: 1;
 }
 
