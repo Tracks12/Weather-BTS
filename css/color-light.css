@@ -6,8 +6,8 @@
 *                              *
 *******************************/
 
-::-webkit-scrollbar-thumb { background: rgba(0, 0, 40, .5); }
-::-webkit-scrollbar-thumb:hover { background: rgba(0, 0, 40, .7); }
+::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, .5); }
+::-webkit-scrollbar-thumb:hover { background: rgba(0, 0, 0, .7); }
 
 html { background: rgba(240, 200, 0, .7); color: rgb(30, 30, 30); }
 body { background: rgba(255, 240, 180, .5); }
