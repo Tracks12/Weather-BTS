@@ -33,9 +33,11 @@ Plan du site :
 |
 \---<a href="../../tree/master/screens/">pics/</a>
     +---<a href="../../blob/master/screens/contact.png">contact.png</a>
-    \---<a href="../../blob/master/screens/login.png">login.png</a>
+    +---<a href="../../blob/master/screens/login.png">login.png</a>
+    \---<a href="../../blob/master/screens/login-light.png">login-light.png</a>
 </pre>
 
 Aperçu du site :
 
 <img type="image/png" src="../../blob/master/screens/login.png" />
+<img type="image/png" src="../../blob/master/screens/login-light.png" />
