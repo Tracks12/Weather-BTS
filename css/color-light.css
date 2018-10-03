@@ -1,0 +1,35 @@
+/*******************************
+*                              *
+* File      : color-light.css  *
+* Update at : 02/10/2018       *
+* Update by : CARDINAL Florian *
+*                              *
+*******************************/
+
+::-webkit-scrollbar-thumb { background: rgba(0, 0, 40, .5); }
+::-webkit-scrollbar-thumb:hover { background: rgba(0, 0, 40, .7); }
+
+html { background: rgba(240, 200, 0, .7); color: rgb(30, 30, 30); }
+body { background: rgba(255, 240, 180, .5); }
+.bg { background-image: url('../pics/light/background.png'); }
+nav { background: #333333; }
+nav div { background-image: url('../pics/light/logo.png'); }
+nav div:hover { background-color: rgba(250, 200, 190, .1); }
+nav ul li { border-color: rgb(120, 80, 0); }
+nav ul li a, nav ul li a:visited { color: #EEAA00; }
+nav ul li a:hover { background: rgba(255, 255, 255, .1); color: #FFBB00; text-shadow: 1px 1px 2px #FFBB00; }
+header { background: rgba(255, 200, 0, 1); border-color: #FFCC00; border-image: linear-gradient(-90deg, #FFCC00, #EE5500) 1; box-shadow: 0 3px 10px #FFCC00; }
+header h1 { text-shadow: 1px 1px 10px #FFCC00; }
+section aside { background: rgba(240, 240, 240, .5); }
+section aside fieldset { background: rgba(240, 240, 240, .5); border-color: #EEAA00; box-shadow: 0 0 5px #333333; }
+section aside fieldset h3 { border-bottom-color: #EEAA00; }
+.error { color: #CC2222; }
+textarea, input { border-color: #EEAA00; color: #333333; }
+textarea:placeholder-shown, input:placeholder-shown { border-color: #CC2222; }
+textarea::placeholder, input::placeholder { color: #333333; }
+input[type=submit]:hover { background: #EEAA00; box-shadow: 0px 0px 30px #EEAA00; color: #333333; }
+footer { background: rgba(50, 50, 50, .7); border-color: #EE5500; box-shadow: 0px -2px 5px #EE5500; color: #FF8800; text-shadow: 1px 1px 1px #333333; }
+
+/******
+* END *
+******/

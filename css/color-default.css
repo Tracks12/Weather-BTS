@@ -11,9 +11,9 @@
 
 html { background: rgba(0, 0, 0, .7); color: rgb(0, 255, 255); }
 body { background: rgba(0, 0, 40, .5); }
-.bg { background-image: url('../pics/background.png'); }
+.bg { background-image: url('../pics/default/background.png'); }
 nav { background: rgb(0, 0, 40); }
-nav div { background-image: url('../pics/logo.png'); }
+nav div { background-image: url('../pics/default/logo.png'); }
 nav div:hover { background-color: rgba(255, 255, 255, .1); }
 nav ul li { border-color: rgb(0, 58, 59); }
 nav ul li a, nav ul li a:visited { color: #22BBBB; }
