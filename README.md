@@ -37,4 +37,4 @@ Plan du site :
 
 Aperçu du site :
 
-<img type="image/png" src="../../blob/master/screens/screenshot0.png" />
+<img type="image/png" src="../../blob/master/screens/login.png" />
