@@ -16,5 +16,9 @@
 		} else { header('location: ./?index=login&error'); }
 	}
 	
+	if(isset($_GET['contact'])) {
+		header('location: ./');
+	}
+	
 	// END
 ?>

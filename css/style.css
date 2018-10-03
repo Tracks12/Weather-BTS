@@ -43,14 +43,19 @@ nav {
 	width: 12em;
 }
 
-nav img {
+nav div {
+	background: url('../pics/logo.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	border-radius: 100%;
 	cursor: pointer;
-	margin: 5px;
+	height: 10em;
+	margin: 10px auto;
 	transition: all .15s;
 	width: 10em;
 }
-nav img:hover { background: rgba(255, 255, 255, .1); }
+nav div:hover { background-color: rgba(255, 255, 255, .1); }
 
 nav ul {
 	list-style-type: none;
@@ -190,7 +195,7 @@ textarea {
 	border-radius: 12px;
 	height: 9em;
 	resize: none;
-	width: 30em;
+	width: 95%;
 }
 
 footer {

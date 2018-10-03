@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- NAV -->
 <nav>
-	<img type="image/png" src="./pics/logo.png" alt="accueil" title="Retour à l'accueil" onclick="document.location = './';" />
+	<div alt="accueil" title="Retour à l'accueil" onclick="document.location = './';"></div>
 	<ul>
 		<?php
 			if(isset($_SESSION['user'])) {
