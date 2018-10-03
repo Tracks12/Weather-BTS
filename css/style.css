@@ -124,8 +124,20 @@ section aside fieldset {
 	border: 2px solid #22FFFF;
 	border-radius: 0 10px 0 10px;
 	box-shadow: 1px 1px 2px #333333;
+	margin: 0 auto;
+	padding: 4px;
 	text-align: center;
 }
+
+section aside fieldset h3 {
+	border-bottom: 2px solid #22FFFF;
+	font-weight: 100;
+	padding-left: 5px;
+	text-align: left;
+	text-shadow: 1px 1px 4px #22FFFF;
+}
+
+section aside fieldset table { margin: 40px auto 0 auto; }
 
 section aside .infoBox {
 	margin: 20px auto;
@@ -139,23 +151,12 @@ section aside .infoBox p {
 }
 .error { color: #CC2222; }
 
-section aside .login {
-	margin: 0 auto 0 auto;
-	padding: 4px;
-	width: 35em;
-}
+section aside .login { width: 35em; }
+section aside .contact { width: 40em; }
 
-section aside .login h3 {
-	border-bottom: 2px solid #22FFFF;
-	font-weight: 100;
-	padding-left: 5px;
-	text-align: left;
-	text-shadow: 1px 1px 4px #22FFFF;
-}
+section aside .contact td { padding: 0 20px; }
 
-section aside .login table { margin: 40px auto 0 auto; }
-
-input {
+textarea, input {
 	background: transparent;
 	border: 2px solid #22FFFF;
 	border-radius: 50px;
@@ -165,8 +166,8 @@ input {
 	padding: 5px 10px;
 	transition: all .2s;
 }
-input:placeholder-shown { border-color: #CC2222; }
-input::placeholder { color: #229999; }
+textarea:placeholder-shown, input:placeholder-shown { border-color: #CC2222; }
+textarea::placeholder, input::placeholder { color: #229999; }
 
 input[type=submit] {
 	border-radius: 8px;
@@ -175,6 +176,7 @@ input[type=submit] {
 	font-weight: bold;
 	margin: 15px auto 20px auto;
 	padding: 10px 25px;
+	text-transform: uppercase;
 }
 input[type=submit]:hover {
 	background: #22FFFF;
@@ -182,6 +184,13 @@ input[type=submit]:hover {
 	color: #222222;
 	margin: 13px auto 18px auto;
 	padding: 12px 30px;
+}
+
+textarea {
+	border-radius: 12px;
+	height: 9em;
+	resize: none;
+	width: 30em;
 }
 
 footer {

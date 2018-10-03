@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <!-- NAV -->
 <nav>
 	<img type="image/png" src="./pics/logo.png" alt="accueil" title="Retour à l'accueil" onclick="document.location = './';" />

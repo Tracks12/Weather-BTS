@@ -30,7 +30,8 @@
 						if($_GET['index'] !== 'login' && !isset($_SESSION['user'])) { header('location: ./?index=login'); }
 						switch($_GET['index']) {
 							case 'home':
-							default: for($i = 0; $i < 30; $i++) { echo('<p>Accueil</p>'); } break;
+							default: echo('<h2>Bienvenu</h2>');
+								for($i = 0; $i < 20; $i++) { echo('<p>blabla</p>'); } break;
 							case 'live': require('./assets/live.php'); break;
 							case 'story': require('./assets/story.php'); break;
 							case 'contact': require('./assets/contact.html'); break;
