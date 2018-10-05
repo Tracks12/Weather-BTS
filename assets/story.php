@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <!-- HISTORIQUE -->
+<?php
+	function tableMake($output, $z) {
+		echo("<table>");
+		for($i = 0; $i < count($output); $i++) {
+			$cell = 'td'; if(!$i) { $cell = 'th'; }
+			echo("<tr>
+				<$cell>{$output[$i][0]}</$cell>
+				<$cell>{$output[$i][$z]}</$cell>
+			</tr>");
+		} echo("</table>");
+	}
+?>
 <div class="carousel">
-	<article>
+	<article id="main">
 		<table>
 			<?php
-				$data = './donnees.csv';
-				$handle = fopen($data, 'r');
+				$handle = fopen('./donnees.csv', 'r');
 				for($x = 0; $ligne = fgetcsv($handle, 1000, ';'); $x++) { // On voit combien il y a de ligne
 					for($y = 0; $y < count($ligne); $y++) { $output[$x][$y] = $ligne[$y]; } // On stock les valeur dans une variable tampon
 				} fclose($handle);
@@ -22,17 +33,16 @@
 		</table>
 	</article>
 	<article id="humidity">
-		<table>
-			<?php
-				
-			?>
-		</table>
+		<?php tableMake($output, 1); // Humidité ?>
 	</article>
 	<article id="temp">
+		<?php tableMake($output, 2); // Température ?>
 	</article>
 	<article id="pressure">
+		<?php tableMake($output, 3); // Pression ?>
 	</article>
 	<article id="carbon">
+		<?php tableMake($output, 4); // Concentration CO² ?>
 	</article>
 </div>
 <!-- END -->
