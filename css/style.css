@@ -102,6 +102,22 @@ section aside {
 	overflow: auto;
 	padding: 50px;
 	padding-top: 150px;
+	position: relative;
+}
+
+section aside .carousel {
+	height: 32em;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+section aside .carousel article {
+	display: inline-grid;
+	height: 32em;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
 }
 
 section aside fieldset {
