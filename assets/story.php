@@ -20,7 +20,7 @@
 				for($x = 0; $ligne = fgetcsv($handle, 1000, ';'); $x++) { // On voit combien il y a de ligne
 					for($y = 0; $y < count($ligne); $y++) { $output[$x][$y] = $ligne[$y]; } // On stock les valeur dans une variable tampon
 				} fclose($handle);
-				
+
 				for($i = 0; $i < count($output); $i++) { // On sort la ligne de la variable tampon
 					$cell = 'td'; if(!$i) { $cell = 'th'; }
 					echo("<tr>");

@@ -18,7 +18,7 @@
 		<link rel="stylesheet" type="text/css" href="./css/color-default.css" />
 		<script language="javascript" type="text/javascript" src="./js/script.js"></script>
 	</head>
-	<body onload="mainMenu();">
+	<body onload="nav.main(); nav.sub();">
 		<div class="bg"></div>
 		<?php
 			require('./assets/nav.php');
@@ -32,7 +32,7 @@
 						switch($_GET['index']) {
 							case 'home':
 							default: echo('<h2>Bienvenu</h2>');
-								for($i = 0; $i < 30; $i++) { echo('<p>blabla</p>'); } break;
+								for($i = 0; $i < 10; $i++) { echo('<p>blabla</p>'); } break;
 							case 'live': require('./assets/live.php'); break;
 							case 'story': require('./assets/story.php'); break;
 							case 'contact': require('./assets/contact.html'); break;
