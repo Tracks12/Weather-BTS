@@ -15,7 +15,7 @@ body { background: rgba(255, 240, 180, .5); }
 nav { background: #333333; }
 nav div { background-image: url('../pics/light/logo.png'); }
 nav div:hover { background-color: rgba(250, 200, 190, .1); }
-nav ol { background: #333333; box-shadow: 2px 0 10px #333333; }
+nav ol { background: #333333; box-shadow: 0 0 10px #333333; }
 nav ol li, nav ul li { border-color: rgb(120, 80, 0); }
 nav ol li a, nav ol li a:visited, nav ul li a, nav ul li a:visited { color: #EEAA00; }
 nav ol li a:hover { color: #FFBB00; text-shadow: 1px 1px 2px #FFBB00; }
