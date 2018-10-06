@@ -36,8 +36,8 @@ class nav {
 	}
 	
 	static sub() {
-		var timer, path = document.getElementById('path'),
-				submenu = document.getElementById('subMenu');
+		var timer, path = document.getElementsByTagName('li')[2],
+				submenu = document.getElementsByTagName('ol')[0];
 		
 		path.addEventListener("mouseover", function(event) {
 			submenu.hidden = false;
