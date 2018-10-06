@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <!-- HISTORIQUE -->
-<?php
-	function tableMake($output, $z) {
-		echo("<table>");
-		for($i = 0; $i < count($output); $i++) {
-			$cell = 'td'; if(!$i) { $cell = 'th'; }
-			echo("<tr>
-				<$cell>{$output[$i][0]}</$cell>
-				<$cell>{$output[$i][$z]}</$cell>
-			</tr>");
-		} echo("</table>");
-	}
-?>
 <div class="carousel">
 	<article id="main">
 		<table>
 			<?php
+				function tableMake($output, $z) {
+					echo("<table>");
+					for($i = 0; $i < count($output); $i++) {
+						$cell = 'td'; if(!$i) { $cell = 'th'; }
+						echo("<tr>
+							<$cell>{$output[$i][0]}</$cell>
+							<$cell>{$output[$i][$z]}</$cell>
+						</tr>");
+					} echo("</table>");
+				}
+				
 				$handle = fopen('./donnees.csv', 'r');
 				for($x = 0; $ligne = fgetcsv($handle, 1000, ';'); $x++) { // On voit combien il y a de ligne
 					for($y = 0; $y < count($ligne); $y++) { $output[$x][$y] = $ligne[$y]; } // On stock les valeur dans une variable tampon
 				} fclose($handle);
-
+				
 				for($i = 0; $i < count($output); $i++) { // On sort la ligne de la variable tampon
 					$cell = 'td'; if(!$i) { $cell = 'th'; }
 					echo("<tr>");
