@@ -15,7 +15,7 @@
 					} echo("</table>");
 				}
 				
-				$handle = fopen('./donnees.csv', 'r');
+				$handle = fopen($path, 'r');
 				for($x = 0; $ligne = fgetcsv($handle, 1000, ';'); $x++) { // On voit combien il y a de ligne
 					for($y = 0; $y < count($ligne); $y++) { $output[$x][$y] = $ligne[$y]; } // On stock les valeur dans une variable tampon
 				} fclose($handle);
