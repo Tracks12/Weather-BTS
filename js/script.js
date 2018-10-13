@@ -9,6 +9,20 @@
 var menu = Array('home', 'live', 'story', 'contact', 'login'),
     title = Array('Accueil', 'Temps Réel', 'Historique', 'Contact', 'Connexion');
 
+function startTime(sep) {
+	var today = new Date(), delay = 500;
+	var h = today.getHours(), m = today.getMinutes();
+	if(h < 10) { h = '0'+h; }
+	if(m < 10) { m = '0'+m; }
+	if(!(document.body.clientWidth <= 690)) {
+		var sep = ":", s = today.getSeconds();
+		if(s < 10) { s = '0'+s; }
+		s = ":"+s;
+	} else { var s = ''; delay = 1000; if(sep === ":") { sep = " "; } else { sep = ":"; }}
+	document.getElementById('timenow').innerHTML = h+sep+m+s;
+	t = setTimeout(function() { startTime(sep); }, delay);
+}
+
 class nav {
 	static main() {
 		var x, y, cell = document.getElementsByClassName('menu'),
