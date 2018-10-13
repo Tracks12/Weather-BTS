@@ -125,6 +125,35 @@ section aside {
 	position: relative;
 }
 
+section aside h2 {
+	border-bottom: 1px solid;
+	font-size: 30px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+
+section aside p {
+	font-size: 18px;
+	line-height: 25px;
+	margin: 10px 0;
+	padding: 5px 0;
+}
+
+section aside table.home {
+	border: 2px solid;
+	border-bottom: 0;
+	border-radius: 0 10px 0 0;
+	border-left: 0;
+	border-collapse: separate;
+	margin: 20px 0;
+	width: 50%;
+}
+
+section aside table.home td {
+	border-left: 1px solid;
+	padding: 5px 10px;
+}
+
 section aside .carousel {
 	display: inline-block;
 	height: 33.2em;
