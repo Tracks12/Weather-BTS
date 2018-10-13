@@ -23,7 +23,7 @@
 		<script language="javascript" type="text/javascript" src="./js/morris/morris.min.js"></script>
 		<script language="javascript" type="text/javascript" src="./js/script.js"></script>
 	</head>
-	<body onload="nav.main(); nav.sub();">
+	<body onload="nav.main(); nav.sub(); startTime();">
 		<div class="bg"></div>
 		<?php
 			require('./assets/nav.php');
@@ -36,8 +36,7 @@
 						if($_GET['index'] !== 'login' && !isset($_SESSION['user'])) { header('location: ./?index=login'); }
 						switch($_GET['index']) {
 							case 'home':
-							default: echo('<h2>Bienvenu</h2>');
-								for($i = 0; $i < 20; $i++) { echo('<p>blabla</p>'); } break;
+							default: require('./assets/home.html'); break;
 							case 'live': require('./assets/live.php'); break;
 							case 'story': require('./assets/story.php'); break;
 							case 'contact': require('./assets/contact.html'); break;
