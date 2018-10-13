@@ -146,6 +146,7 @@ section aside table.home {
 	border-left: 0;
 	border-collapse: separate;
 	margin: 20px 0;
+	min-width: 375px;
 	width: 50%;
 }
 
