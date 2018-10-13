@@ -32,7 +32,7 @@ class nav {
 		document.title += " - "+title[y];
 		document.getElementsByTagName('h1')[0].innerHTML += " - "+title[y];
 		
-		if(y == 4) { document.getElementById('user').focus(); }
+		if(y === 4) { document.getElementById('user').focus(); }
 	}
 	
 	static sub() {
@@ -56,6 +56,16 @@ class nav {
 			}, 500);
 		});
 	}
+}
+
+function makeGraph(x, values, type) {
+	Morris.Line({
+		element: document.getElementsByClassName('statgraph')[x],
+		data: values,
+		xkey: 'time',
+		ykeys: [type],
+		labels: ['Valeur']
+	});
 }
 
 /******

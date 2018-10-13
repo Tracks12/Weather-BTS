@@ -12,36 +12,69 @@
 							<$cell>{$output[$i][0]}</$cell>
 							<$cell>{$output[$i][$z]}</$cell>
 						</tr>");
+						if(!$i) { $i = $GLOBALS['x'] - 21; }
 					} echo("</table>");
 				}
 				
 				$handle = fopen($path, 'r');
 				for($x = 0; $ligne = fgetcsv($handle, 1000, ';'); $x++) { // On voit combien il y a de ligne
-					for($y = 0; $y < count($ligne); $y++) { $output[$x][$y] = $ligne[$y]; } // On stock les valeur dans une variable tampon
+					for($y = 0; $y < count($ligne); $y++) {
+						if(($x !== 0) && ($y === 3)) { $ligne[$y] = $ligne[$y] / 100; } // Convertion de la pression en hPa
+						$output[$x][$y] = $ligne[$y]; // On stock les valeurs dans une variable tampon
+					}
 				} fclose($handle);
 				
 				for($i = 0; $i < count($output); $i++) { // On sort la ligne de la variable tampon
 					$cell = 'td'; if(!$i) { $cell = 'th'; }
 					echo("<tr>");
-					foreach($output[$i] as $col) { // On en sort ses colonnes
-						echo("<$cell>$col</$cell>");
-					} echo("</tr>");
-					if(!$i) { $i = $x-20; } // On paramètre le nombre de ligne attendu à la sortie
+					foreach($output[$i] as $col) { echo("<$cell>$col</$cell>"); } // On sort les colonnes
+					echo("</tr>");
+					if(!$i) { $i = $x - 21; } // On paramètre le nombre de ligne attendu à la sortie
 				}
 			?>
 		</table>
 	</article>
+	<script>
+		var table = [ <?php for($i = $x - 20; $i < count($output); $i++) {
+				$sep = ", "; if($i === count($output)-1) { $sep = NULL; };
+				echo("{ time: '".$output[$i][0]."', humidity: {$output[$i][1]}, temp: {$output[$i][2]}, pressure: {$output[$i][3]}, carbon: {$output[$i][4]} }$sep");
+			} ?> ];
+	</script>
 	<article id="humidity">
-		<?php tableMake($output, 1); // Humidité ?>
+		<div class="table">
+			<?php tableMake($output, 1); ?>
+		</div>
+		<div class="graph">
+			<div class="statgraph"></div>
+			<script>makeGraph(0, table, 'humidity');</script>
+		</div>
 	</article>
 	<article id="temp">
-		<?php tableMake($output, 2); // Température ?>
+		<div class="table">
+			<?php tableMake($output, 2); ?>
+		</div>
+		<div class="graph">
+			<div class="statgraph"></div>
+			<script>makeGraph(1, table, 'temp');</script>
+		</div>
 	</article>
 	<article id="pressure">
-		<?php tableMake($output, 3); // Pression ?>
+		<div class="table">
+			<?php tableMake($output, 3); ?>
+		</div>
+		<div class="graph">
+			<div class="statgraph"></div>
+			<script>makeGraph(2, table, 'pressure');</script>
+		</div>
 	</article>
 	<article id="carbon">
-		<?php tableMake($output, 4); // Concentration CO² ?>
+		<div class="table">
+			<?php tableMake($output, 4); ?>
+		</div>
+		<div class="graph">
+			<div class="statgraph"></div>
+			<script>makeGraph(3, table, 'carbon');</script>
+		</div>
 	</article>
 </div>
 <!-- END -->

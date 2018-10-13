@@ -120,13 +120,14 @@ section aside {
 
 section aside .carousel {
 	display: inline-block;
-	height: 32em;
+	height: 33.2em;
 	overflow: hidden;
 	position: relative;
 	width: 100%;
 }
 
 section aside .carousel article {
+	display: flex;
 	height: 100%;
 	overflow: auto;
 	position: relative;
@@ -151,6 +152,18 @@ section aside .carousel article table td {
 	border-left: 1px dotted;
 	padding: 2px 5px;
 }
+
+section aside .carousel .table,
+section aside .carousel .graph {
+	display: inline-grid;
+	height: 100%;
+	width: 50%;
+}
+section aside .carousel .graph .statgraph { height: 75%; margin: auto 0; }
+section aside .carousel #main { display: inline-grid; }
+
+svg, svg text tspan, svg path { font-weight: 100; stroke: #00CCCC; }
+svg circle { fill: #CC00CC; stroke: #00CCCC; }
 
 section aside fieldset {
 	border: 2px solid;
