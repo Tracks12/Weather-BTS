@@ -199,8 +199,7 @@ section aside .carousel .graph {
 section aside .carousel .graph .statgraph { height: 75%; margin: auto 0; }
 section aside .carousel #main { display: inline-grid; }
 
-svg, svg text tspan, svg path { font-weight: 100; stroke: #00CCCC; }
-svg circle { fill: #CC00CC; stroke: #00CCCC; }
+svg circle { stroke-width: 2; }
 
 section aside fieldset {
 	border: 2px solid;
