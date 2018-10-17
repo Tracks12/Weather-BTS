@@ -45,8 +45,8 @@ Plan du site :
 Aperçu du site :
 
 > Les thèmes :
-> <img type="image/png" src="https://raw.githubusercontent.com/Tracks12/Weather-BTS/blob/master/screens/login.png" />
-> <img type="image/png" src="https://raw.githubusercontent.com/Tracks12/Weather-BTS/blob/master/screens/login-light.png" />
+> <img type="image/png" src="https://raw.githubusercontent.com/Tracks12/Weather-BTS/master/screens/login.png" />
+> <img type="image/png" src="https://raw.githubusercontent.com/Tracks12/Weather-BTS/master/screens/login-light.png" />
 
 > Les différents graphiques :
 > <img type="image/png" src="https://raw.githubusercontent.com/Tracks12/Weather-BTS/master/screens/graphCarousel.gif" />
