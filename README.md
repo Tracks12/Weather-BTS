@@ -48,6 +48,5 @@ Aperçu du site :
 > <img type="image/png" src="../../blob/master/screens/login.png" />
 > <img type="image/png" src="../../blob/master/screens/login-light.png" />
 
-
-> Les différents graph
+> Les différents graphiques :
 > <img type="image/png" src="../../blob/master/screens/graphCarousel.gif" />
