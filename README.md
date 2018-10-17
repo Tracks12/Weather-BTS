@@ -33,13 +33,20 @@ Plan du site :
 |   +---<a href="../../blob/master/pics/logo.png">logo.png</a>
 |   \---<a href="../../blob/master/pics/icon.ico">icon.ico</a>
 |
-\---<a href="../../tree/master/screens/">pics/</a>
+\---<a href="../../tree/master/screens/">screens/</a>
     +---<a href="../../blob/master/screens/contact.png">contact.png</a>
+    +---<a href="../../blob/master/screens/graph.png">graph.png</a>
+    +---<a href="../../blob/master/screens/graphCarousel.gif">graphCarousel.gif</a>
+    +---<a href="../../blob/master/screens/login.gif">login.gif</a>
     +---<a href="../../blob/master/screens/login.png">login.png</a>
     \---<a href="../../blob/master/screens/login-light.png">login-light.png</a>
 </pre>
 
 Aperçu du site :
 
-<img type="image/png" src="../../blob/master/screens/login.png" />
-<img type="image/png" src="../../blob/master/screens/login-light.png" />
+> Les thèmes :
+> <img type="image/png" src="../../blob/master/screens/login.png" />
+> <img type="image/png" src="../../blob/master/screens/login-light.png" />
+
+> Les différents graph
+> <img type="image/png" src="../../blob/master/screens/graphCarousel.gif" />
