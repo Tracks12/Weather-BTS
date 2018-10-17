@@ -23,6 +23,8 @@ nav ul li a:hover { background: rgba(255, 255, 255, .1); color: #22DDDD; text-sh
 header { background: rgba(0, 0, 40, .7); border-color: #CCCCCC; border-image: linear-gradient(-90deg, #22CCCC, #CC22CC) 1; box-shadow: 0 3px 10px #22CCCC; }
 header h1 { text-shadow: 1px 1px 10px #22FFFF; }
 section aside { background: rgba(0, 0, 0, .5); }
+svg, svg text tspan, svg path { font-weight: 100; stroke: #00CCCC; }
+svg circle { fill: #CC00CC; stroke: #00CCCC; }
 section aside fieldset { background: rgba(0, 0, 0, .5); border-color: #22FFFF; box-shadow: 1px 1px 2px #333333; }
 section aside fieldset h3 { border-bottom-color: #22FFFF; text-shadow: 1px 1px 4px #22FFFF; }
 .error { color: #CC2222; }
