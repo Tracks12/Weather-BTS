@@ -47,6 +47,6 @@ Aperçu du site :
 > Les thèmes :
 > <img type="image/png" src="../../blob/master/screens/login.png" />
 > <img type="image/png" src="../../blob/master/screens/login-light.png" />
-
+<br />
 > Les différents graph
 > <img type="image/png" src="../../blob/master/screens/graphCarousel.gif" />
