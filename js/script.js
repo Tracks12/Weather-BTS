@@ -72,14 +72,16 @@ class nav {
 	}
 }
 
-function makeGraph(x, values, type) {
-	Morris.Line({
-		element: document.getElementsByClassName('statgraph')[x],
-		data: values,
-		xkey: 'time',
-		ykeys: [type],
-		labels: ['Valeur']
-	});
+class graph {
+	static courbe(x, values, type) {
+		Morris.Line({
+			element: document.getElementsByClassName('statgraph')[x],
+			data: values,
+			xkey: 'time',
+			ykeys: [type],
+			labels: ['Valeur']
+		});
+	}
 }
 
 /******
