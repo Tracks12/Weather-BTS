@@ -50,7 +50,7 @@
 		</div>
 		<div class="graph">
 			<div class="statgraph"></div>
-			<script>makeGraph(0, output, 'humidity');</script>
+			<script language="javascript" type="text/javascript">graph.courbe(0, output, 'humidity');</script>
 		</div>
 	</article>
 	<article id="temp"> <!-- Température -->
@@ -59,7 +59,7 @@
 		</div>
 		<div class="graph">
 			<div class="statgraph"></div>
-			<script>makeGraph(1, output, 'temp');</script>
+			<script language="javascript" type="text/javascript">graph.courbe(1, output, 'temp');</script>
 		</div>
 	</article>
 	<article id="pressure"> <!-- Pression -->
@@ -68,7 +68,7 @@
 		</div>
 		<div class="graph">
 			<div class="statgraph"></div>
-			<script>makeGraph(2, output, 'pressure');</script>
+			<script language="javascript" type="text/javascript">graph.courbe(2, output, 'pressure');</script>
 		</div>
 	</article>
 	<article id="carbon"> <!-- Concentration CO² -->
@@ -77,7 +77,7 @@
 		</div>
 		<div class="graph">
 			<div class="statgraph"></div>
-			<script>makeGraph(3, output, 'carbon');</script>
+			<script language="javascript" type="text/javascript">graph.courbe(3, output, 'carbon');</script>
 		</div>
 	</article>
 </div>

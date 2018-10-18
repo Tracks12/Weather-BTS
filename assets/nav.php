@@ -9,6 +9,7 @@
 					<li><a class="menu" href="?index=live">Live</a></li>
 					<li><a class="menu" href="?index=story#main">Historique ></a></li>
 					<li><a class="menu" href="?index=contact">Contact</a></li>
+					<li><a class="menu" href="./gant.html">Rapport</a></li>
 					<li><a class="menu" href="?logout">Déconnexion</a></li>');
 			} else { echo('<li><a class="menu" href="?index=login">Connexion</a></li>'); }
 		?>
