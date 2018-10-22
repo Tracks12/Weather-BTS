@@ -16,7 +16,7 @@
 	
 	$handle = fopen($path, 'r');
 	for($x = 0; $ligne = fgetcsv($handle, 1000, ';'); $x++) { // On voit combien il y a de ligne
-		for($y = 0; $y < count($ligne); $y++) {
+		for($y = 0; $y <= 4; $y++) {
 			if(($x !== 0) && ($y === 3)) { $ligne[$y] = $ligne[$y] / 100; } // Convertion de la pression en hPa
 			$output[$x][$y] = $ligne[$y]; // On stock les valeurs dans une variable tampon
 		}
