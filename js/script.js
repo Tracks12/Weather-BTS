@@ -77,7 +77,7 @@ class graph {
 		Morris.Line({
 			element: document.getElementsByClassName('statgraph')[x],
 			data: values,
-			xkey: 'time',
+			xkey: ['time'],
 			ykeys: [type],
 			labels: ['Valeur']
 		});
