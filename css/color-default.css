@@ -21,6 +21,10 @@ nav ol li a, nav ol li a:visited, nav ul li a, nav ul li a:visited { color: #22B
 nav ol li a:hover { color: #22DDDD; text-shadow: 1px 1px 2px #22DDDD; }
 nav ul li a:hover { background: rgba(255, 255, 255, .1); color: #22DDDD; text-shadow: 1px 1px 2px #22DDDD; }
 header { background: rgba(0, 0, 40, .7); border-color: #CCCCCC; border-image: linear-gradient(-90deg, #22CCCC, #CC22CC) 1; box-shadow: 0 3px 10px #22CCCC; }
+@keyframes gradientShow {
+	0%  { box-shadow: 0 3px 10px #22CCCC; }
+	50% { box-shadow: 0 3px 10px #CC22CC; }
+}
 header h1 { text-shadow: 1px 1px 10px #22FFFF; }
 section aside { background: rgba(0, 0, 0, .5); }
 svg, svg text tspan, svg path { font-weight: 100; stroke: #00CCCC; }
