@@ -34,9 +34,6 @@ Plan du site :
 |   \---<a href="https://github.com/Tracks12/Weather-BTS/blob/master/pics/icon.ico">icon.ico</a>
 |
 \---<a href="https://github.com/Tracks12/Weather-BTS/tree/master/screens/">screens/</a>
-    +---<a href="https://github.com/Tracks12/Weather-BTS/blob/master/screens/contact.png">contact.png</a>
-    +---<a href="https://github.com/Tracks12/Weather-BTS/blob/master/screens/graph.png">graph.png</a>
-    +---<a href="https://github.com/Tracks12/Weather-BTS/blob/master/screens/graphCarousel.gif">graphCarousel.gif</a>
     +---<a href="https://github.com/Tracks12/Weather-BTS/blob/master/screens/login.gif">login.gif</a>
     +---<a href="https://github.com/Tracks12/Weather-BTS/blob/master/screens/login.png">login.png</a>
     \---<a href="https://github.com/Tracks12/Weather-BTS/blob/master/screens/login-light.png">login-light.png</a>
@@ -47,7 +44,3 @@ Aperçu du site :
 > Les thèmes :
 > <img type="image/png" src="https://raw.githubusercontent.com/Tracks12/Weather-BTS/master/screens/login.png" />
 > <img type="image/png" src="https://raw.githubusercontent.com/Tracks12/Weather-BTS/master/screens/login-light.png" />
-
-> Les différents graphiques :
-> <img type="image/png" src="https://raw.githubusercontent.com/Tracks12/Weather-BTS/master/screens/graphCarousel.gif" />
-
