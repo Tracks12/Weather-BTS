@@ -30,7 +30,7 @@ section aside { background: rgba(240, 240, 240, .5); }
 section aside fieldset { background: rgba(240, 240, 240, .5); border-color: #EEAA00; box-shadow: 0 0 5px #333333; }
 section aside fieldset h3 { border-bottom-color: #EEAA00; }
 .error { color: #CC2222; }
-textarea, input { border-color: #EEAA00; color: #333333; }
+textarea, input, section aside .download a { border-color: #EEAA00; color: #333333; }
 textarea:placeholder-shown, input:placeholder-shown { border-color: #CC2222; }
 textarea::placeholder, input::placeholder { color: #333333; }
 input[type=submit]:hover { background: #EEAA00; box-shadow: 0px 0px 30px #EEAA00; color: #333333; }

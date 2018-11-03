@@ -1,7 +1,7 @@
 /*******************************
 *                              *
 * File      : style.css        *
-* Update at : 14/10/2018       *
+* Update at : 10/10/2018       *
 * Update by : CARDINAL Florian *
 *                              *
 *******************************/
@@ -231,9 +231,25 @@ section aside .infoBox p {
 }
 
 section aside .login { width: 35em; }
-section aside .contact { width: 40em; }
+section aside .download { width: 40em; }
 
-section aside .contact td { padding: 0 20px; }
+section aside .download a {
+	border: 2px solid;
+	border-radius: 8px;
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 45px auto 40px auto;
+	padding: 10px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .2s all;
+	width: 10em;
+}
+section aside .download a:hover {
+	margin: 40px auto 35px auto;
+	padding: 15px 35px;
+}
 
 textarea, input {
 	background: transparent;

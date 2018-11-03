@@ -6,8 +6,8 @@
 *                              *
 *******************************/
 
-var menu = Array('home', 'live', 'story', 'contact', 'login'),
-    title = Array('Accueil', 'Temps Réel', 'Historique', 'Contact', 'Connexion');
+var menu = Array('home', 'live', 'story', 'download', 'login'),
+    title = Array('Accueil', 'Temps Réel', 'Historique', 'Télécharger', 'Connexion');
 
 function startTime(sep) {
 	var today = new Date(), delay = 500;
@@ -32,7 +32,7 @@ class nav {
 		switch(data) {
 			case 'live': x = 1, y = 1; break;
 			case 'story': x = 2, y = 2; break;
-			case 'contact': x = 3, y = 3; break;
+			case 'download': x = 3, y = 3; break;
 			case 'login': x = 0, y = 4; break;
 			case 'home':
 			default: x = 0; y = 0; break;
@@ -57,12 +57,13 @@ class nav {
 			submenu.hidden = false;
 			clearTimeout(timer);
 		});
+		
 		path.addEventListener("mouseout", function(event) {
 			timer = setTimeout(function() {
 				submenu.hidden = true;
 			}, 500);
 		});
-
+		
 		submenu.addEventListener("mouseover", function(event) { clearTimeout(timer); });
 		submenu.addEventListener("mouseout", function(event) {
 			timer = setTimeout(function() {
@@ -79,7 +80,8 @@ class graph {
 			data: values,
 			xkey: ['time'],
 			ykeys: [type],
-			labels: ['Valeur']
+			labels: ['Valeur'],
+			resize: true
 		});
 	}
 }

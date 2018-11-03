@@ -32,7 +32,7 @@ svg circle { fill: #CC00CC; stroke: #00CCCC; }
 section aside fieldset { background: rgba(0, 0, 0, .5); border-color: #22FFFF; box-shadow: 1px 1px 2px #333333; }
 section aside fieldset h3 { border-bottom-color: #22FFFF; text-shadow: 1px 1px 4px #22FFFF; }
 .error { color: #CC2222; }
-textarea, input { border-color: #22FFFF; color: #22FFFF; }
+textarea, input, section aside .download a { border-color: #22FFFF; color: #22FFFF; }
 textarea:placeholder-shown, input:placeholder-shown { border-color: #CC2222; }
 textarea::placeholder, input::placeholder { color: #229999; }
 input[type=submit]:hover { background: #22FFFF; box-shadow: 0px 0px 30px #00FFFF; color: #222222; }
