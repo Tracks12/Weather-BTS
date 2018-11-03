@@ -29,8 +29,14 @@ Plan du site :
 |   \---<a href="https://github.com/Tracks12/Weather-BTS/blob/master/js/script.js">script.js</a>
 |
 +---<a href="https://github.com/Tracks12/Weather-BTS/tree/master/pics/">pics/</a>
-|   +---<a href="https://github.com/Tracks12/Weather-BTS/blob/master/pics/background.png">background.png</a>
-|   +---<a href="https://github.com/Tracks12/Weather-BTS/blob/master/pics/logo.png">logo.png</a>
+|   +---<a href="https://github.com/Tracks12/Weather-BTS/tree/master/pics/default/">default/</a>
+|   |   +---<a href="https://github.com/Tracks12/Weather-BTS/blob/master/pics/default/background.png">background.png</a>
+|   |   \---<a href="https://github.com/Tracks12/Weather-BTS/blob/master/pics/default/icon.ico">logo.png</a>
+|   |
+|   +---<a href="https://github.com/Tracks12/Weather-BTS/tree/master/pics/light/">light/</a>
+|   |   +---<a href="https://github.com/Tracks12/Weather-BTS/blob/master/pics/light/background.png">background.png</a>
+|   |   \---<a href="https://github.com/Tracks12/Weather-BTS/blob/master/pics/light/icon.ico">logo.png</a>
+|   |
 |   \---<a href="https://github.com/Tracks12/Weather-BTS/blob/master/pics/icon.ico">icon.ico</a>
 |
 \---<a href="https://github.com/Tracks12/Weather-BTS/tree/master/screens/">screens/</a>
