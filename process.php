@@ -7,6 +7,9 @@
 	*                              *
 	*******************************/
 	
+	$username = "admin";
+	$password = "admin";
+	
 	function verifyData($data) {
 		$data = trim($data);
 		$data = stripslashes($data);
@@ -15,7 +18,7 @@
 	}
 	
 	if($_SERVER['REQUEST_METHOD'] == 'POST') {
-		if(isset($_GET['login']) && (verifyData($_POST['user']) && verifyData($_POST['pass'])) && (($_POST['user'] === 'admin') && ($_POST['pass'] === 'admin'))) {
+		if(isset($_GET['login']) && (verifyData($_POST['user']) && verifyData($_POST['pass'])) && (($_POST['user'] === $username) && ($_POST['pass'] === $password))) {
 			session_start();
 			$_SESSION['user'] = $_POST['user'];
 			header('location: ./');
