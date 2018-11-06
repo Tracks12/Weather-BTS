@@ -155,6 +155,26 @@ section aside table.home td {
 	border-left: 1px solid;
 	padding: 5px 10px;
 }
+section aside #dataLive {
+	display: inline-grid;
+	width: 100%;
+	height: 20em;
+}
+
+section aside #dataLive table tr.top { height: 50%; }
+section aside #dataLive table tr.bot { height: 50%; }
+
+section aside #dataLive table td{
+	text-align: center;
+	width:25%;
+	height: 100%
+}
+
+section aside #dataLive table{
+	border: 1px solid;
+	border-left: 0;
+	border-right: 0;
+}
 
 section aside .carousel {
 	display: inline-block;
