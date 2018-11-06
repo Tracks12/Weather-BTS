@@ -8,10 +8,17 @@
 	?>
 	<h2>Données prise le : <?php echo($output[0]); ?></h2>
 	<table>
-		<?php
-			echo("<tr>"); for($i = 1; $i < count($output); $i++) { echo("<td>{$output[$i]}</td>"); } echo("</tr>");
-			echo("<tr>"); for($i = 1; $i < count($output); $i++) { echo("<td><script></script></td>"); } echo("</tr>");
-		?>
+		<tr class="top"> 
+			<?php for($i = 1; $i < count($output); $i++) { echo("<td><script>graph.jauge()</script></td>"); } ?>
+		</tr>
+		<tr class="bot">
+			<?php
+				for($i = 1; $i < count($output); $i++) {
+					if($i === 3) { $output[$i] = $output[$i] / 100; }
+					echo("<td>{$output[$i]}</td>");
+				}
+			?>
+		</tr>
 	</table>
 </article>
 <!-- END -->
