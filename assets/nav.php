@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <!-- NAV -->
 <nav>
 	<div alt="accueil" title="Retour à l'accueil" onclick="document.location = './';"></div>

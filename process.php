@@ -18,7 +18,10 @@
 	}
 	
 	if($_SERVER['REQUEST_METHOD'] == 'POST') {
-		if(isset($_GET['login']) && (verifyData($_POST['user']) && verifyData($_POST['pass'])) && (($_POST['user'] === $username) && ($_POST['pass'] === $password))) {
+		if(isset($_GET['login']) && 
+			(verifyData($_POST['user']) && verifyData($_POST['pass'])) &&
+			(($_POST['user'] === $username) && ($_POST['pass'] === $password))) {
+			
 			session_start();
 			$_SESSION['user'] = $_POST['user'];
 			header('location: ./');

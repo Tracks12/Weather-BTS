@@ -1,10 +1,10 @@
 /*******************************
-*                              *
-* File      : style.css        *
-* Update at : 10/10/2018       *
-* Update by : CARDINAL Florian *
-*                              *
-*******************************/
+ *                              *
+ * File      : style.css        *
+ * Update at : 10/10/2018       *
+ * Update by : CARDINAL Florian *
+ *                              *
+ *******************************/
 
 * {
 	font-family: Ubuntu, Lato, sans-serif;
@@ -170,11 +170,7 @@ section aside #dataLive table td{
 	height: 100%
 }
 
-section aside #dataLive table{
-	border: 1px solid;
-	border-left: 0;
-	border-right: 0;
-}
+section aside #dataLive table { border-bottom: 1px solid; }
 
 section aside .carousel {
 	display: inline-block;
@@ -321,5 +317,5 @@ footer marquee {
 }
 
 /******
-* END *
-******/
+ * END *
+ ******/

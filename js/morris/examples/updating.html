@@ -22,8 +22,8 @@ function data(offset) {
     var v = (offset + x) % 360;
     ret.push({
       x: x,
-      y: Math.sin(Math.PI * v / 90).toFixed(4),
-      z: Math.cos(Math.PI * v / 90).toFixed(4)
+      y: Math.sin(Math.PI * v / 180).toFixed(4),
+      z: Math.cos(Math.PI * v / 180).toFixed(4)
     });
   }
   return ret;

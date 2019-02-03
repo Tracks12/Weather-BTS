@@ -1,13 +1,13 @@
 /*******************************
-*                              *
-* File      : style.css        *
-* Update at : 28/09/2018       *
-* Update by : CARDINAL Florian *
-*                              *
-*******************************/
+ *                              *
+ * File      : style.css        *
+ * Update at : 28/09/2018       *
+ * Update by : CARDINAL Florian *
+ *                              *
+ *******************************/
 
 var menu = Array('home', 'live', 'story', 'download', 'login'),
-    title = Array('Accueil', 'Temps Réel', 'Historique', 'Télécharger', 'Connexion');
+title = Array('Accueil', 'Temps Réel', 'Historique', 'Télécharger', 'Connexion');
 
 function startTime(sep) {
 	var today = new Date(), delay = 500;
@@ -26,7 +26,7 @@ function startTime(sep) {
 class nav {
 	static main() {
 		var x, y, cell = document.getElementsByClassName('menu'),
-		    data = document.location.search.split('?')[1];
+		data = document.location.search.split('?')[1];
 		if(data) { data = data.split('=')[1]; }
 		
 		switch(data) {
@@ -51,7 +51,7 @@ class nav {
 	
 	static sub() {
 		var timer, path = document.getElementsByTagName('li')[2],
-		    submenu = document.getElementsByTagName('ol')[0];
+		submenu = document.getElementsByTagName('ol')[0];
 		
 		path.addEventListener("mouseover", function(event) {
 			submenu.hidden = false;

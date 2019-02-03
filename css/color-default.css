@@ -1,10 +1,10 @@
 /********************************
-*                               *
-* File      : color-default.css *
-* Update at : 02/10/2018        *
-* Update by : CARDINAL Florian  *
-*                               *
-********************************/
+ *                               *
+ * File      : color-default.css *
+ * Update at : 02/10/2018        *
+ * Update by : CARDINAL Florian  *
+ *                               *
+ ********************************/
 
 ::-webkit-scrollbar-thumb { background: rgba(0, 0, 40, .5); }
 ::-webkit-scrollbar-thumb:hover { background: rgba(0, 0, 40, .7); }
@@ -14,7 +14,7 @@ body { background: rgba(0, 0, 40, .5); }
 .bg { background-image: url('../pics/default/background.png'); }
 nav { background: rgb(0, 0, 40); }
 nav div { background-image: url('../pics/default/logo.png'); }
-nav div:hover { background-color: rgba(255, 255, 255, .1); }
+nav div:hover { background-color: rgba(255, 255, 255, .1); box-shadow: 0 0 10px rgba(255, 255, 255, .2); }
 nav ol { background: rgb(0, 0, 40); box-shadow: 0 0 10px rgb(0, 0, 40); }
 nav ol li, nav ul li { border-color: rgb(0, 58, 59); }
 nav ol li a, nav ol li a:visited, nav ul li a, nav ul li a:visited { color: #22BBBB; }
@@ -39,5 +39,5 @@ input[type=submit]:hover { background: #22FFFF; box-shadow: 0px 0px 30px #00FFFF
 footer { background: rgba(0, 0, 20, .7); border-color: #CC22CC; box-shadow: 0px -2px 5px #CC22CC; color: #CC22CC; text-shadow: 1px 1px 1px #AA22AA; }
 
 /******
-* END *
-******/
+ * END *
+ ******/
